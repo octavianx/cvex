@@ -1,3 +1,5 @@
 __pycache__/
 
-db.sqlite*
+/db.sqlite*
+/apitest/*.jpg
+/apitest/*.jpeg
