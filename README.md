@@ -9,7 +9,7 @@
 OS:   macOS 10.3.6 
 
 客户端测试工具
-`python 2.7.10 / 3.7.0     /apitest
+python 2.7.10 / 3.7.0     /apitest
 
 服务端
 python 3.7.0     面部识别web API 
