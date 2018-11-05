@@ -6,8 +6,8 @@ import sys
 
 # define the URL to our face detection API
 url = "http://localhost:8000/face_detection/detect/"
+
 """ 
- 
 # use our face detection API to find faces in images via image URL
 image = cv2.imread("obama.jpg")
 payload = {"url": "https://www.pyimagesearch.com/wp-content/uploads/2015/05/obama.jpg"}
@@ -28,12 +28,10 @@ cv2.waitKey(0) & 0xFF
 imagepath=sys.argv[1]
 image2path=imagepath+".detected.jpg"
 
-print imagepath+image2path
-
 image = cv2.imread(imagepath)
 payload = {"image": open(imagepath, "rb")}
 r = requests.post(url, files=payload).json()
-print "mage: {}".format(r)
+print ("Input Image: {}".format(r))
  
 # loop over the faces and draw them on the image
 for (startX, startY, endX, endY) in r["faces"]:
