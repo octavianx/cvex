@@ -15,7 +15,7 @@ $pip install numpy  requests
 
 
 
-##使用方法
+## 使用方法
   服务器启动：
 ```bash
 python manage.py runserver
@@ -27,7 +27,7 @@ python manage.py runserver
  $./apitest  [sourceimage]
 ```
 
-  运行结果:
+## 运行结果:
 1. boundbox 
   输出JSON 格式的 面部识别方框数据，并产生一个新的图像文件，将结果写入。
 2. 图像识别结果窗口
